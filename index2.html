@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        /* .loc{
+            display: inline-block;
+        } */
+        .in1{
+            display: inline;
+        }
+        #one,#two{
+            display: inline-block;
+          
+            
+        }
+        #one{
+            width: 400px;
+            
+            position: relative;
+            top: 0%;
+            position: absolute;
+            top: 10%;
+            left: 50px;
+            
+        }
+        #two{
+            width: 500px;
+            position: relative;
+            top: 0%;
+            position: absolute;
+            top: 10%;
+            left: 40%; 
+        }
+        .two1{
+            position: absolute;
+            top: 0%;
+            left: 40%;
+        }
+       
+        /* @media screen and (min-width:200px) and (max-width:500px){
+            #two{
+           
+            position: relative;
+            top: 0%;
+            position: absolute;
+            top: 10%;
+           
+        }
+        } */
+    </style>
+</head>
+<body>
+    <div id="one">
+        <div class="loc">
+            <img src="https://media.istockphoto.com/id/1148705812/vector/location-icon-vector-pin-sign-isolated-on-white-background-navigation-map-gps-direction.jpg?s=612x612&w=0&k=20&c=lqEIzW3QedZfytsX30NoBJbHxZZbWnlLsvEiwOSbaow=" alt="loc" width="15px" height="19px">
+            <p style="display: inline;"> <h2 style="display: inline;line-height: -1px;">Location :</h2> <br>
+            Kadapa,Andhra-pradesh,Pincode-868768</p> <br>
+        </div>
+        <div class="email">
+            <img src="https://static.vecteezy.com/system/resources/previews/017/396/757/original/google-mail-icons-free-png.png" alt="email" width="20px" height="19px">
+            <p style="display: inline;"> <h2 style="display: inline;line-height: -1px;">Email :</h2> <br>
+            example@gmail.com</p> <br>
+        </div>
+        <div class="cal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpwpJgyT1Wo2GhXPQrzdHqLErawCH2en0Lew&usqp=CAU" alt="cal" width="15px" height="16px">
+            <p style="display: inline;"> <h2 style="display: inline;line-height: -1px;">Call :</h2> <br>
+            +91 9876543210</p> <br>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121765.83785264315!2d78.23754589726562!3d17.4988027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91a8dcb76371%3A0x779cd37af96408a0!2sMehfil%20Restaurant!5e0!3m2!1sen!2sin!4v1695543436980!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+    </div>
+    <div id="two">
+                <div class="two1">
+                    <div >
+                        <label for="name">Your Name</label>
+                        <label style="margin-left: 150px;" for="mail">Your Email</label>
+                        </div>
+                        <div>
+                        <input type="text" name="" id="name" required>
+                        <input style="margin-left: 50px;" type="email" name="" id="mail" required>
+                        </div><br><br>
+                        <div>
+                            <label for="sub">Subject</label><br>
+                            <input type="text" name="" id="sub">
+                        </div><br>
+                        <div>
+                            <label for="">Message</label><br>
+                            <textarea name="" id="" cols="70" rows="15"></textarea>
+                        </div>
+                </div>
+    </div>
+</body>
+</html>
