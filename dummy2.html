@@ -43,37 +43,20 @@ a{
 }
 .image{
     position: relative;
- 
-    /* position: relative;
-    justify-content: center; */
-    top: 20px;
+    top: 5px;
 }
 .content{
-   position: relative;
-   bottom: 300px;
+   position: absolute;
+   left: 0px;
+   top: 150px;
   text-align: center;
   color: green;
 
 }
-/* .contaner1{
-    width: 300px;
-    height: 200px;
-    background-color: pink;
-    color: white;
-    display: inline-block;
-    gap: 20px;
-
-}
-.container{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 0px;
-} */
-
 .contaner1{
             text-align: center;
             width: 300px;
+            height: 180px;
             background-color: pink;
             color: white;
             display: inline-block;
@@ -87,18 +70,38 @@ a{
             top: 50px;
 
         }
-@media screen and (min-width:150px) and (max-width:350px) {
+@media screen and  (max-width:350px) {
             #container{
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
             }
-        }
-        @media screen and (min-width:350px) and (max-width:700px){
-            #container{
+            .name{
                 display: flex;
-                column-gap: 10px;   
+                display: inline-block;
+                width: 310px;
+                
+
             }
+            .nav1{
+                position: relative;
+    left: 10px;
+    
+            }
+            .nav2{
+                margin-left: -10px;
+            }
+            .nav2{display: flex;
+                
+
+            }
+            .nav12{
+                margin-left: 5px;
+            }
+            nav{
+                height: 20vh;
+            }
+            
         }
     </style>
 </head>
@@ -137,10 +140,9 @@ a{
         <img src="https://img.freepik.com/premium-photo/modern-corporate-architecture-can-be-seen-cityscape-office-buildings_410516-276.jpg" alt="" width="100%" height="500px">
         <span class="content"><h1>Loreum Ipsum Dolor</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores vero, ab quo voluptas expedita accusantium eligendi omnis quos, atque modi repellendus maiores delectus sed tenetur, distinctio doloribus est! Pariatur.</p>
-        <button style="margin-left: 45%;width: 100px;background-color: black;color: white;border-radius: 5px;height: 35px;">Read More</button>
+        <button style="text-align: center; width: 100px;background-color: black;color: white;border-radius: 5px;height: 35px;">Read More</button>
     </span> 
     <div id="container">
-        <div>
             <div class="contaner1">
                 <span class="material-symbols-outlined" style="color: green;" >
                     laptop_mac
@@ -161,7 +163,6 @@ a{
                     </span>
                     <h1>Lorem Ipsum</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            </div>
         </div>
     </div>
     </div>

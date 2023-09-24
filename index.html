@@ -25,10 +25,11 @@
     background-color: black;
     position: relative;
     top: 0%;
+    
   }
   .cal{
    margin-top: 3%;
-   margin-left: 45%;
+   margin-left:55%;
   } 
   table{
     width: 200px;
@@ -37,14 +38,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width:200px) {
-
-    /* table{
-        margin-top: 10px;
-        
-        display: flex;
-
-    } */
+  @media screen and (max-width:200px) {
     .cal{
    margin-top: 3%;
    display: flex;
@@ -75,11 +69,12 @@
             position: relative;
             top: 50px;
         }
-        @media screen and  (max-width:300px) {
+        @media screen and  (max-width:350px) {
             #card{
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
+                
             }
             #team{
                 display: flex;
@@ -90,12 +85,103 @@
                 justify-content: center;
             }
         }
-        /* @media screen and (min-width:350px) and (max-width:700px){
-            #card{
+        /* Task-3 */
+        nav{
+    width: 100%;
+    height: 10vh;
+    background-color: bisque;
+    
+}
+.nav1{
+    position: relative;
+    left: 20px;
+    bottom: -10px;
+}
+.nav2{word-spacing: 25px;
+    text-align: center;
+    justify-content: center;
+    float: right;
+    position: relative;
+    bottom: -20px;
+    right: 20px;
+}
+.nav12{
+    margin-left: 20px;
+    font-size: 25px;
+    color: green;
+}
+.nav13{
+    margin-left: 30%;
+    word-spacing: 25px;
+    font-size: 19px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.image{
+    position: relative;
+    top: 5px;
+}
+.content{
+   position: absolute;
+   left: 0px;
+   top: 150px;
+  text-align: center;
+  color: green;
+
+}
+.contaner1{
+            text-align: center;
+            width: 300px;
+            height: 180px;
+            background-color: pink;
+            color: white;
+            display: inline-block;
+            
+            
+        }
+        #container{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 50px;
+
+        }
+@media screen and  (max-width:350px) {
+            #container{
                 display: flex;
-                column-gap: 10px;   
+                flex-direction: column;
+                gap: 10px;
             }
-        } */
+            .name{
+                display: flex;
+                display: inline-block;
+                width: 310px;
+                
+
+            }
+            .nav1{
+                position: relative;
+    left: 10px;
+    
+            }
+            .nav2{
+                margin-left: -10px;
+            }
+            .nav2{display: flex;
+                
+
+            }
+            .nav12{
+                margin-left: 5px;
+            }
+            nav{
+                height: 29vh;
+            }
+            
+        }
     </style>
 </head>
 <body>
@@ -173,9 +259,69 @@
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a style="margin-left: 15px;" href=""><i class="fa-brands fa-twitter"></i></a>
             <a style="margin-left: 15px;" href=""><i class="fa-brands fa-instagram"></i></a> 
-      
         </div>
-
+    </div>
+   </div><br><br><br>
+   <div class="cnt2">
+    <nav>
+        <div class="name">
+            <span class="nav1"><span class="material-symbols-outlined">
+                mail
+                </span>example@gemil.com</span>
+                <span class="nav1"><span class="material-symbols-outlined">
+                    phone_iphone
+                    </span>+91 9876543210</span>
+           <span class="nav2">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a style="margin-left: 15px;" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a style="margin-left: 15px;" href=""><i class="fa-brands fa-instagram"></i></a> 
+           </span>
+        </div>
+    </nav>
+    <nav>
+        <div class="name1">
+            <span class="nav12">Green</span>
+            <span class="nav13">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Service</a>
+                <a href="">Portfolio</a>
+                <a href="">team</a>
+                <a href="">Dropdown</a>
+                <a href="">Contact</a>
+                <Button>Get started</Button>
+            </span>
+        </div>
+    </nav>
+    <div class="image">
+        <img src="https://img.freepik.com/premium-photo/modern-corporate-architecture-can-be-seen-cityscape-office-buildings_410516-276.jpg" alt="" width="100%" height="500px">
+        <span class="content"><h1>Loreum Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolores vero, ab quo voluptas expedita accusantium eligendi omnis quos, atque modi repellendus maiores delectus sed tenetur, distinctio doloribus est! Pariatur.</p>
+        <button style="text-align: center; width: 100px;background-color: black;color: white;border-radius: 5px;height: 35px;">Read More</button>
+    </span> 
+    <div id="container">
+            <div class="contaner1">
+                <span class="material-symbols-outlined" style="color: green;" >
+                    laptop_mac
+                    </span>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="contaner1">
+                <span class="material-symbols-outlined" style="color: green;">
+                    business_center
+                    </span>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="contaner1">
+                <span class="material-symbols-outlined" style="color: green;">
+                    calendar_month
+                    </span>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+    </div>
     </div>
    </div>
    
