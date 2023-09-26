@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            top: 0%;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            position: relative;
+            top: 150px;
+            left: 40%;
+            width: inherit;
+            height: inherit;
+        }
+        .card{
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid pink;
+            transform-origin: left bottom;
+
+        }
+        /* .card img{
+            width:inherit;
+    height:inherit;
+        } */
+         .card:hover{
+           outline: 2px solid blue;
+        }
+        #main:hover .card:nth-child(1){
+            transform: rotate(-30deg);
+        }
+        #main:hover .card:nth-child(1):hover{
+            transform: rotate(-30deg) scale(1.3,1.3);
+        }
+        #main:hover .card:nth-child(2){
+            transform: rotate(-10deg);
+        }
+        #main:hover .card:nth-child(2):hover{
+            transform: scale(1.4,1.4) rotate(-10deg);
+        }
+        #main:hover .card:nth-child(3){
+            transform: rotate(5deg);
+        }
+        #main:hover .card:nth-child(3):hover{
+            transform: scale(1.5,1.5) rotate(5deg);
+        }
+        #main:hover .card:nth-child(4){
+            transform: rotate(20deg);
+        }
+        #main:hover .card:nth-child(4):hover{
+            transform: scale(1.3,1.3) rotate(20deg);
+        } 
+      
+        @media screen and (min-width:200) and (max-width:400) {
+            body{
+                width: 50%;
+            }
+            #main{
+            position: relative;
+            top: 150px;
+            left: 0% !important;
+            width: inherit;
+            height: inherit;
+        }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <div class="card">
+            <img src="https://i.pinimg.com/474x/cb/aa/8b/cbaa8becdf3215fa237d41a2b6b5d1ce.jpg" alt="" width="280px" height="300">
+        </div>
+        
+        
+        <div class="card">
+            <img src="https://i.pinimg.com/236x/f1/8c/6a/f18c6a866401d1f606f422d60675f92f.jpg" alt="" width="280px" height="300">
+        </div>
+        <div class="card">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/356/233/desktop-wallpaper-bear-and-panda-bubu-dudu-finger-guns-love-dudu-bubu.jpg" alt="" width="280px" height="300">
+        </div>
+        <div class="card">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/366/263/desktop-wallpaper-panda-bear-love-bubu-dudu-dudu-bubu-thumbnail.jpg" alt="" width="280px" height="300">
+        </div>
+    </div>
+</body>
+</html>
