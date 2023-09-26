@@ -4,7 +4,7 @@
 }
 .details{
     position: absolute;
-    top: 53%;
+    top: 45%;
     left: 20px;
 }
 a{
@@ -20,3 +20,75 @@ table{
 ul> li{
     list-style-type: circle;
 }
+ol li{
+    list-style-type: none;
+}
+p a{
+    color: rgba(9, 99, 235, 0.852);
+}
+p{
+    margin-left: 25px;
+}
+.main1,.main2,.main3{
+    width: 300px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: aliceblue;
+}
+.one1,.one2,.one3{
+    width: 0px;
+    height: 20px;
+    transition: all 2s;
+    border-radius: 30px;
+    background-color: green;
+    
+}
+.main1:hover .one1{
+    width: 280px;
+    background-color: green;
+    
+}
+.main2:hover .one2{
+    width: 260px;
+    background-color: palevioletred;
+    
+}
+.main3:hover .one3{
+    width: 230px;
+    background-color: rgba(255, 132, 0, 0.89);
+    
+}
+.main{
+    display: flex;
+   
+
+}
+.main1,.main2,.main3{
+    margin-top: 30px;
+}
+@media screen and (max-width:400px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+       
+    }
+    .details{
+        position: absolute;
+        top: 43%;
+        left: 0px;
+        width: 300px;
+    }
+    
+    #about{
+        
+        justify-content: center;
+        width: 50%;
+    }
+    .img1{
+       width: 100%;
+    }
+}
+
+
+
