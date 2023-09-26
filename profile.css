@@ -1,0 +1,22 @@
+#Conatiner{
+    position: relative;
+    top: 0%;
+}
+.details{
+    position: absolute;
+    top: 53%;
+    left: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+table{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    width: 100%;
+}
+ul> li{
+    list-style-type: circle;
+}
