@@ -123,26 +123,3 @@ color: white;
 border-radius: 20px;
 padding: 8px;
 }
-
-/* .one .abt:hover ~ #about{
-visibility: visible;
-}   */
-
-/* #home,#about,#skills1,#Projects1,#Contact1{
-    display: none;
-} */
-
-
-/* #nav1:hover ~ #home{
-display: inline-block; 
-    background-color: red;
-}
-
-#hello123{
-    color: red;
-}
-#nav1:hover ~ #home{
-    color: green;
-    display: inline-block;
-
-} */
