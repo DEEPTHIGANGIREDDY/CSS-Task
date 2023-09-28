@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <meta name="Author" content="Deepthi">
+    <meta http-equiv="refresh" content="5">
+    <style>
+        body{
+            background-image: url(https://www.recordnet.com/gcdn/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG?crop=1999,1125,x0,y78&width=1999&height=1125&format=pjpg&auto=webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        img{
+            padding: 30px;
+            width: 320px;
+            height: 250px;
+            cursor: pointer;
+            transition: ease 0.5s;
+        }
+        img:hover{
+            filter: drop-shadow(20px 20px 20px black);
+        }
+        .img2{
+            grid-column: 1/2;grid-row: 1/2;
+        }
+        .img3{
+            grid-column: 2/3;
+        }
+        .img4{
+            grid-column: 1/2;grid-row: 2/3;
+        }
+        .img5{
+            grid-column: 2/3;grid-row: 2/3;
+        }
+        .img6{
+            grid-column: 1/2;grid-row: 3/4;
+        }
+        .img7{
+            grid-column: 2/3;
+        }
+        .img1{
+            display: grid;
+            margin-left: 0px;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 27% 27% 27%;
+            gap: 3px;
+        }
+        @media screen and (min-width:410px) and (max-width:700px) {
+            .img1{
+                display: grid !important;
+                column-gap: 190px; 
+                row-gap: 7px;
+            }
+           
+        }
+        @media screen and (max-width:410px) {
+            .img1{
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 0px;
+                width: 280px !important;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <div class="img1">
+        <img class="img2"src="https://images.unsplash.com/photo-1607462109225-6b64ae2dd3cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBob3RvZ3JhcGh5fGVufDB8fDB8fHww&w=1000&q=80" alt="" >
+        <img class="img3" src="https://media.istockphoto.com/id/480227392/photo/analog-film-camera-on-the-table.jpg?s=612x612&w=0&k=20&c=I2InYIdNL3-jJN2R96BE5inkHNpz2oJY0bb0hNYCxUY=" alt="" >
+        <img class="img4"  src="https://www.69dropsstudio.co.uk/wp-content/uploads/2016/11/benefits-of-photography.jpg" alt="" >
+        <img class="img5" src="https://sm.pcmag.com/t/pcmag_uk/news/1/10-quick-t/10-quick-tips-to-fix-your-bad-photos_dq14.1200.jpg" alt="">
+        <img class="img6"  src="https://p16-amd-va.tiktokcdn.com/obj/musically-maliva-obj/7f577590c71c1103d1b0e645bf5bd174.jpeg" alt="">
+        <img class="img7"  src="https://cdn.pixabay.com/photo/2015/09/03/08/04/photographer-920128_1280.jpg" alt="">
+    </div>
+</body>
+</html>
