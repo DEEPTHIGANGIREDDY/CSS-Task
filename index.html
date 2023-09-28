@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        .object-fit-cover{
+            width: 100%; height: 500px;
+        }
+        .navbar{width: 100%;
+            
+            
+        }
+        .thor{
+            position: relative;
+            top: 0%;
+        }
+        .thor_cnt{
+            position: absolute;
+            top: 15%;
+            width: 600px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            color: white;
+        }
+        .spn{
+            opacity: 0.7;
+        }
+        .spn:hover{
+            opacity: 1;
+        }
+        .btn{
+            /* width: 300px; */
+        }
+        .btn:hover{
+            opacity: 0.6;
+        }
+        .names{
+            display: flex;
+            margin-top: 70px;
+
+        }
+        .card{
+            position: relative;
+            top: 0%;
+        }
+        .crd1{
+            position: absolute;
+            top: 0%;
+            z-index: -1;
+        }
+        .card:hover .crd1 {
+            z-index: 1;
+            width: 20rem;
+            height: 550px;
+        }
+        .card:hover>img{
+            height: 300px;
+            z-index: -1;
+        } 
+        .grid{
+            display: flex;
+            gap: 8px;
+            margin-left: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </nav>
+   
+        <div class="thor">
+            <video src="./Thor4.mp4" class="object-fit-cover" autoplay controls muted></video>
+            <div class="thor_cnt">
+            <h1 style="color: rgba(242, 27, 8, 0.966);font-weight: bolder;font-size: xx-larger;letter-spacing: 20px;">THOR</h1>
+            <span class="spn">
+            <h6>2011 | 1h54m | 4 Languages</h6>
+     
+            <p style="font-family: Arial, Helvetica, sans-serif; font-size: small;">Thor, the God of Thunder, finds himself on a journey unlike anything he's ever faced -- one of <self-discovery class="br">
+             Thor Odinson, sometimes referred to by his title as the God of Thunder, is a fictional character portrayed by Chris Hemsworth in the Marvel Cinematic Universe (MCU) media franchise.
+            </self-discovery></p>
+            <h6>Superhero | Action |Dark Humour | Fantasy</h6>
+            </span><br>
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-secondary " type="button" style="width: 200px;">
+                    <a style="text-decoration: none;color: white;font-size: large;" href="https://www.hotstar.com/in/movies/thor/1660000044/watch?filters=content_type%3Dmovie">Watch Now</a>
+                </button>
+                <button class="btn btn-secondary " type="button">+</button>
+            </div>
+        </div>
+        <div class="mrlikthis">
+            <div class="names">
+                <h5 style="margin-left: 50px;">More Like This</h5>
+                <h5 style="margin-left: 50px;">Trailers & More</h5>
+                <hr>
+            </div>
+            <div class="grid">
+                
+                  <div class="card" style="width: 15rem;">
+                    <img style="height: 440px;" src="./thor1.jpg" class="card-img-top" alt="img">
+                    <div class="crd1">
+                        <img style="height: 180px;" src="./Thor_(film)_poste.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: black;color: white;">
+                      <h5 class="card-title">THOR</h5>
+                      <p class="card-text">Thor, the God of Thunder, finds himself on a journey unlike anything he's ever faced one of <self-discovery class="br">
+                        Thor Odinson, sometimes referred to by his title as the God of Thunder </self-discovery></p>        
+                        <a href="#" class="btn btn-primary">Watch Now</a>
+                        <button class="btn btn-secondary " type="button">+</button>
+                   
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 15rem;">
+                    <img style="height: 440px;" src="./thor1.jpg" class="card-img-top" alt="img">
+                    <div class="crd1">
+                        <img style="height: 180px;" src="./Thor_(film)_poste.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: black;color: white;">
+                      <h5 class="card-title">THOR</h5>
+                      <p class="card-text">Thor, the God of Thunder, finds himself on a journey unlike anything he's ever faced one of <self-discovery class="br">
+                        Thor Odinson, sometimes referred to by his title as the God of Thunder </self-discovery></p>        
+                        <a href="#" class="btn btn-primary">Watch Now</a>
+                        <button class="btn btn-secondary " type="button">+</button>
+                   
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 15rem;">
+                    <img style="height: 440px;" src="./thor1.jpg" class="card-img-top" alt="img">
+                    <div class="crd1">
+                        <img style="height: 180px;" src="./Thor_(film)_poste.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: black;color: white;">
+                      <h5 class="card-title">THOR</h5>
+                      <p class="card-text">Thor, the God of Thunder, finds himself on a journey unlike anything he's ever faced one of <self-discovery class="br">
+                        Thor Odinson, sometimes referred to by his title as the God of Thunder </self-discovery></p>        
+                        <a href="#" class="btn btn-primary">Watch Now</a>
+                        <button class="btn btn-secondary " type="button">+</button>
+                   
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 15rem;">
+                    <img style="height: 440px;" src="./thor1.jpg" class="card-img-top" alt="img">
+                    <div class="crd1">
+                        <img style="height: 180px;" src="./Thor_(film)_poste.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: black;color: white;">
+                      <h5 class="card-title">THOR</h5>
+                      <p class="card-text">Thor, the God of Thunder, finds himself on a journey unlike anything he's ever faced one of <self-discovery class="br">
+                        Thor Odinson, sometimes referred to by his title as the God of Thunder </self-discovery></p>        
+                        <a href="#" class="btn btn-primary">Watch Now</a>
+                        <button class="btn btn-secondary " type="button">+</button>
+                   
+                    </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
