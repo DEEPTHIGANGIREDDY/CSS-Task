@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            --webkit-transform: translate(-50%,-50%);   
+
+        }
+        #earth{
+            background: url();
+            background-size: cover;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background-size: 600px;
+            box-shadow: inset 20px 20px 20px 20px black, inset -6px 0px 10px 4px white;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes rotate{
+            from{
+                background-position: 0px 0px;
+            }
+            to {
+                background-position: 600px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="earth">
+
+    </div>
+</body>
+</html>
