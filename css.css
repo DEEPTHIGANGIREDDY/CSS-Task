@@ -95,7 +95,7 @@ width: 300px;
 }
 #home{
 display: grid;
-grid-template-columns: 110%;
+grid-template-columns: 100%;
 
 
 }
@@ -122,4 +122,8 @@ background-color: black;
 color: white;
 border-radius: 20px;
 padding: 8px;
+}
+nav{
+    position: sticky;
+    top: 0%;
 }
